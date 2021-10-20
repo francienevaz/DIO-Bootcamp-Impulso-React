@@ -1,6 +1,9 @@
 
 body {
     background: #faf06d;
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 50px;
 }
 h1, h2, h3 {
     text-align: center;
@@ -13,7 +16,7 @@ div, h3 {
 img {
     margin: 50px;
     padding-top: 5px;
-    padding-left: 250px;
+    padding-left: 50px;
     height: 350px;
     width: 700px;
     
@@ -24,6 +27,6 @@ img {
     background: #eb6003;
     color: #ffecd0;
     font-size: 20px;
-    text-align: center;
+    text-align: justify;
     border: 2px solid #000000;
 }
