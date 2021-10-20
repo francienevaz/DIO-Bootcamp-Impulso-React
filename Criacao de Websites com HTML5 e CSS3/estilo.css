@@ -1,0 +1,29 @@
+
+body {
+    background: #faf06d;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: #0f0000;
+}
+div, h3 {
+    text-align: left;
+}
+
+img {
+    margin: 50px;
+    padding-top: 5px;
+    padding-left: 250px;
+    height: 350px;
+    width: 700px;
+    
+}
+.post {
+    margin: 50px;
+    padding: 50px;
+    background: #eb6003;
+    color: #ffecd0;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #000000;
+}
