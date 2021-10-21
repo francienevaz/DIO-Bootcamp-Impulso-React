@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Content Fundamentos</title>
+    <style>
+        .container {
+            height: 600px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid black;
+        }
+        .item {
+            background-color: #ff00aa;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: antiquewhite;
+            border: 3px solid #000000 ;
+        }
+        .stretch {
+            align-content: stretch;
+        }
+        .center {
+            align-content: center;
+        }
+        .flex-start {
+            align-content: flex-start;
+        }
+        .flex-end {
+            align-content: flex-end;
+        }
+        .space-around {
+            align-content: space-around;
+        }
+        .space-between {
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stretch</h1>
+    <p>Ghouls</p>
+    <div class="container stretch">
+        <div class="item">The episode begins on Halloween night, with the citizens of Elmore singing "All Hail All Hallow's Eve!" while they go trick-or-treating.</div>
+        <div class="item">After the song is over, Gumball suggests to Darwin they go visit Carrie.</div>
+        <div class="item">They go to Carrie's house, but Carrie is very upset and states that Halloween is not used to be, and it is all just about candy instead of scaring people.</div>
+        <div class="item">Meanwhile, Tobias and Banana Joe talk about a legend about Mr. Candy and that he brings candy.</div>
+        <div class="item">They chant "Candy, Candy, Candy!" and a beehive-headed ghoul named Mr. Candy is summoned.</div>
+        <div class="item">Mr. Candy angrily tells the two boys that he does not give candy to trick-or-treaters,</div>
+        <div class="item">but only punishes those with his vengeance, and vanishes.</div>
+
+    </div>
+    
+    <h1>Center</h1>
+    <p>Ghouls</p>
+    <div class="container center">
+        <div class="item">Elmore singing "All Hail All Hallow's Eve!" while they go trick-or-treating.</div>
+        <div class="item">After the song is over, Gumball suggests to Darwin they go visit Carrie.</div>
+        <div class="item">...all just about candy instead of scaring people.</div>
+        <div class="item">Meanwhile, Mr. Candy and that he brings candy.</div>
+        <div class="item">They chant "Candy, Candy, Candy!" and a beehive-headed ghoul named Mr. Candy is summoned.</div>
+        <div class="item">Mr. Candy angrily tells the two boys that he does not give candy to trick-or-treaters,</div>
+        <div class="item">but only punishes those with his vengeance, and vanishes.</div>
+
+    </div>
+
+    <h1>Flex-Start</h1>
+    <p>Ghouls</p>
+    <div class="container flex-start">
+        <div class="item">Elmore singing "All Hail All Hallow's Eve!" while they go trick-or-treating.</div>
+        <div class="item">After the song is over, Gumball suggests to Darwin they go visit Carrie.</div>
+        <div class="item">all just about candy instead of scaring people.</div>
+        <div class="item">Meanwhile, Mr. Candy and that he brings candy.</div>
+        <div class="item">They chant "Candy, Candy, Candy!" and a beehive-headed ghoul named Mr. Candy is summoned.</div>
+        <div class="item">Mr. Candy angrily tells the two boys that he does not give candy to trick-or-treaters,</div>
+        <div class="item">but only punishes those with his vengeance, and vanishes.</div>
+
+    </div>
+
+    <h1>Flex-End</h1>
+    <p>Ghouls</p>
+    <div class="container flex-end">
+        <div class="item">Elmore singing "All Hail All Hallow's Eve!" while they go trick-or-treating.</div>
+        <div class="item">After the song is over, Gumball suggests to Darwin they go visit Carrie.</div>
+        <div class="item">They go to Carrie's house, but Carrie is very upset and states that Halloween is not used to be.</div>
+        <div class="item">Meanwhile, Mr. Candy and that he brings candy.</div>
+        <div class="item">They chant "Candy, Candy, Candy!" and a beehive-headed ghoul named Mr. Candy is summoned.</div>
+        <div class="item">Mr. Candy angrily tells the two boys that he does not give candy to trick-or-treaters,</div>
+        <div class="item">but only punishes those with his vengeance, and vanishes.</div>
+
+    </div>
+
+    <h1>Space-Around</h1>
+    <p>Ghouls</p>
+    <div class="container space-around">
+        <div class="item">The citizens of Elmore singing "All Hail All Hallow's Eve!" while they go trick-or-treating.</div>
+        <div class="item">After the song is over, Gumball suggests to Darwin they go visit Carrie.</div>
+        <div class="item">... all just about candy instead of scaring people.</div>
+        <div class="item">Meanwhile, Mr. Candy and that he brings candy.</div>
+        <div class="item">They chant "Candy, Candy, Candy!" and a beehive-headed ghoul named Mr. Candy is summoned.</div>
+        <div class="item">Mr. Candy angrily tells the two boys that he does not give candy to trick-or-treaters,</div>
+        <div class="item">but only punishes those with his vengeance, and vanishes.</div>
+
+    </div>
+
+    <h1>Space-Between</h1>
+    <p>Ghouls</p>
+    <div class="container space-between">
+        <div class="item">The citizens of Elmore singing "All Hail All Hallow's Eve!" while they go trick-or-treating.</div>
+        <div class="item">After the song is over, Gumball suggests to Darwin they go visit Carrie.</div>
+        <div class="item">Carrie is very upset and states that Halloween is not used to be, and it is all just about candy instead of scaring people.</div>
+        <div class="item">Meanwhile, Mr. Candy and that he brings candy.</div>
+        <div class="item">They chant "Candy, Candy, Candy!" and a beehive-headed ghoul named Mr. Candy is summoned.</div>
+        <div class="item">Mr. Candy angrily tells the two boys that he does not give candy to trick-or-treaters,</div>
+        <div class="item">but only punishes those with his vengeance, and vanishes.</div>
+
+    </div>
+</body>
+</html>
