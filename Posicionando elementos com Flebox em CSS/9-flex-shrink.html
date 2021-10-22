@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Shrink Fundamentos</title>
+    <link rel="stylesheet" href="9-style.css">
+</head>
+<body>
+    <p>Flex-Shrink:1</p>
+    <div class="flex-container ">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <p>Flex-Shrink:1</p>
+    <div class="flex-container ">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">Olha o que acontece</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <p>Flex-Shrink: 0</p>
+    <div class="flex-container ">
+        <div class="item s-0 fg-1">A</div>
+        <div class="item s-0 fg-1">B</div>
+        <div class="item s-0 fg-1">Nesse caso o container não comporta o tamanho dos itens e vai vazar</div>
+        <div class="item s-0 fg-1">definido o flex basis para 100px e o flex shrink em 0 não permitimos a compressão dos itens</div>
+        <div class="item s-0 fg-1">Essa situação muda se definirmos o Flex-Shrink</div>
+    </div>
+
+    <p>Flex-Shrink: mix / basis 100px</p>
+    <div class="flex-container ">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-2 fg-1">B</div>
+        <div class="item s-2 fg-1">C</div>
+        <div class="item s-3 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+</body>
+</html>
